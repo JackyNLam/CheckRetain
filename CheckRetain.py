@@ -21,8 +21,8 @@ else:
     sys.exit()
 LastSat=datetime.strftime(datetime.today().date()-timedelta(days=(datetime.today().weekday()+2)),"%d/%m/%Y")
 NextSat=datetime.strftime(datetime.strptime(LastSat,"%d/%m/%Y")+timedelta(days=365),"%d/%m/%Y")
-PersonID = "1349716"
-browser = webdriver.Edge(r"C:\Users\VR787FC\msedgedriver.exe")
+PersonID = "1111111"#masked info
+browser = webdriver.Edge(r"C:\Users\@username@\msedgedriver.exe")#masked info
 browser.minimize_window()
 browser.get('https://retain-asiapac.ey.net/IWRetainWeb/IWISAPIRedirect.dll/Files/static/html/webportal_6_18.html')
 ChartXML = getWallChartXML(browser)
